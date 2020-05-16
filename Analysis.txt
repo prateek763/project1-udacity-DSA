@@ -1,0 +1,46 @@
+This file explains the run time analysis of each of the test cases in terms of the Big O Notation
+(Worts case Complexity).Analysis mainly focuses on the time required for the algorithim to execute
+excliding the time required to load the files.
+
+#For Task0
+The complexity of this algorithm is O(1) as there are only two statements which take constant time
+to execute irrespective of the input given.
+
+#For Task1
+The complexity of this algorithm will come up to O(n) where n is the total number of records in the
+file. As there are two files in the algorithm being excuted hence the total number of executions will
+be 2*2*n where first 2 is for two files and second 2 is for two staements for each iterations.But for 
+inputs these 2's wil be negligible and thus the complexity come up to O(n). 
+->O(2*2*n)
+->O(n)
+
+#For Task2
+The complexity of this algorithm will come up to O(n) where n is the total number of records in the
+file.The first loop scans the each record of calls dataset hence it will run n number of times having 
+complexity O(n).The statements in it will also excute n times thus let the complexity of whole loop is
+'x*O(n)'where x is number of statements in the for loop. Max function for dictionary will have O(k)
+complexity where k is number of elements in dictionary and k<n. Rest statements have O(1) Complexity 
+as they execute in constant time. Thus O(k) and O(1) are neglected and the overall complexity comes up 
+to be O(n)
+->O(k)+O(1)+O(n)
+->O(n)
+
+#For Task3
+The complexity of this algorithm will be O(nlog(n)) where n is the total number of records in the
+file. Due to the fact that we find list sorting operations, which have a time complexity of O(nlog(n)). 
+In the code there are statements which have O(1) complexity. Additionally there are 2 loops which take 
+O(n) time to execute.The sum of all these complexities come up to "x*O(1) + x*O(n) + O(nlog(n))".But O(1)
+and O(n) are neglected and we end up in O(nlog(n)) time complexity.
+->x*O(1) + x*O(n) + O(nlog(n))
+->x*O(n) + O(nlog(n))
+->O(nlog(n))
+
+#For Task4
+The complexity of this algorithm will be O(nlog(n)) where n is the total number of records in the
+file. Due to the fact that we find list sorting operations, which have a time complexity of O(nlog(n)). 
+In the code there are statements which have O(1) complexity. Additionally there are several loops which take 
+O(n) time to execute.The sum of all these complexities come up to "x*O(1) + x*O(n) + O(nlog(n))".But O(1)
+and O(n) are neglected and we end up in O(nlog(n)) time complexity.
+->x*O(1) + x*O(n) + O(nlog(n))
+->x*O(n) + O(nlog(n))
+->O(nlog(n))
